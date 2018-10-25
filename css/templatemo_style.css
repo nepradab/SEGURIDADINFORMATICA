@@ -32,6 +32,28 @@ h1, h2, h3, h4, h5, h6 { font-family: Georgia, serif; margin-bottom: 20px; }
 }
 .nav > li > a:hover { background-color: #F0B429; } /*CAMBIA DE COLOR AL PASAR EL CURSOR POR LOS BOTONES*/
 .nav-justified > li > a { color: white;	background: #ef9127; }/*CAMBIAR COLOR FONDO AL NO DAR CLIC EN BOTONES*/
+
+/*Yo modifico*/
+.nav-sudmenu > li > a { color: white;	background: #ef9127; }/*CAMBIAR COLOR FONDO AL NO DAR CLIC EN BOTONES, copi de arriba y puse para sudmenu*/
+
+.nav-justified li ul {       /* ocULTE SUBITEMS*/
+ display:none;
+ position:absolute;
+ min-width:140px;
+}
+.nav-justified li:hover > ul {   /* aparezca sudmenu al parsar cursor*/
+  display:block;
+ }
+
+ .nav-justified {            /*Para traer alfrente el sudmenu y menu*/
+    position: relative;
+    z-index: 1;
+ }
+
+.imagen-fondo{background: rgb(164,225,255); } /*CREE CLASE PARA FONDO, SE APLICA EN MULTIMEDI SEGUNDA IMAGEN*/
+
+/*hasta aca agregue esto para el sudmenu*/
+
 .navbar-header h2 { letter-spacing: 2px; padding-left: 20px; }
 .navbar-toggle { background-color: rgba(161, 0, 0, 0.7); border-radius: 0; }
 .navbar-toggle:focus { outline: none;  }
@@ -83,18 +105,18 @@ footer a:hover { color: #FFFF00; }
 
 .item_container { margin: 0 auto; }
 
-#img_preview { margin-top: 30px; }
+#img_preview { margin-top: 30px; }  /*Modificado*/
 #img_preview img {
 	margin: 0 auto;
- 	margin-top: 20px;
-	margin-bottom: 30px;
+ 	margin-top: 0px;
+	margin-bottom: 0px;
 	background-color: #F8F5F5;
 	border: 1px solid #ddd;
 	padding: 4px;
 }
 
 #img_preview h3 { text-align: center; }
-.footer_item { margin-bottom: 15px; }
+.footer_item { margin-bottom: 0px; }
 
 .section_box {
 	border: 1px solid #CCCCCC;
